@@ -7,4 +7,9 @@ def test1():
     print(data)
     print(data.shape)
 
-test1()
+
+def test2():
+    data = [10]
+    data = torch.tensor(data)
+    print(data)
+test2()

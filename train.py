@@ -43,7 +43,7 @@ def train_net(net, epochs, data_dir, output_dir, features_dir, folds_dir, dir_ch
             Device:          {device.type}
         ''')
 
-    optimizer = optim.Adam(net.parameters(), lr=lr)
+    optimizer = optim.Adam(net.parameters(), lr=lr, weight_decay=0.0001)
     criterion = FocalLoss()
 
     loss_val = []

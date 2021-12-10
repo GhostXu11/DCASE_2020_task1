@@ -1,7 +1,7 @@
 from torch.utils.data import Dataset
 import os.path as osp
 import torchaudio
-from utils import LABELS_10, LABELS_3
+from utils import LABELS_10, LABELS_3, LABELS_10_NEW
 import torch
 import librosa
 import random

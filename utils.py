@@ -6,6 +6,12 @@ import torch
 LABELS_10 = {'airport': 0, 'shopping_mall': 1, 'metro_station': 2, 'street_pedestrian': 3, 'public_square': 4,
              'street_traffic': 5, 'tram': 6, 'bus': 7, 'metro': 8, 'park': 9}
 
+LABELS_10_NEW = {'airport': [1, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'shopping_mall': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+                 'metro_station': [0, 0, 1, 0, 0, 0, 0, 0, 0, 0], 'street_pedestrian': [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+                 'public_square': [0, 0, 0, 0, 1, 0, 0, 0, 0, 0], 'street_traffic': [0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+                 'tram': [0, 0, 0, 0, 0, 0, 1, 0, 0, 0], 'bus': [0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+                 'metro': [0, 0, 0, 0, 0, 0, 0, 0, 1, 0], 'park': [0, 0, 0, 0, 0, 0, 0, 0, 0, 1]}
+
 LABELS_3 = {'indoor': 0, 'outdoor': 1, 'transportation': 2}
 
 
